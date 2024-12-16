@@ -1,0 +1,168 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container padrão */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #f6d6d6; /* Tom de rosé */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff7f00; /* Laranja */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff7f00; /* Laranja ao passar o mouse */
+}
+
+/* Main Content */
+main {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.text-content h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.text-content p {
+    margin: 20px 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff7f00; /* Laranja */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e56b00;
+}
+
+.image-content img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção de Produtos */
+.ice-cream-section {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.ice-cream-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Usando Flexbox para garantir que as imagens fiquem lado a lado */
+.ice-cream-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as imagens "quebrem" para a linha de baixo, se necessário */
+    gap: 20px;
+    justify-content: center; /* Centraliza as imagens */
+}
+
+.ice-cream-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px; /* Define a largura fixa para cada item */
+    margin-bottom: 20px; /* Espaço entre as linhas de itens */
+}
+
+.ice-cream-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.ice-cream-item h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.ice-cream-item p {
+    font-size: 1.2rem;
+    color: #f39c12;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #4caf50; /* Verde */
+}
